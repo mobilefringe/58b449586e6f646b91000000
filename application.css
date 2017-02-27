@@ -2324,7 +2324,7 @@ td.stores_pin{
     color:  #3D441E; 
 }
 
-.feature_label{
+.feature_label, .long_feature_label{
     background-color: #00a3de;
 }
 
