@@ -301,7 +301,7 @@
     <footer>
         <div class="bottom_nav trim_screen">
         	<div class="row-fluid">
-                <div class="col-sm-6 col-md-5">
+                <div class="col-sm-6 col-md-4">
                     <div class="hidden-xs special_box">
                         <label for="facebook_image_id">                     
                             <i class="fa fa-facebook-official social_icon" aria-hidden="true"></i>
@@ -316,11 +316,11 @@
                     </div>
                 </div>
                 
-                <div class="col-sm-6 col-md-2">
+                <div class="col-sm-6 col-md-4">
                     
                 </div>
                 
-        		<div class="col-sm-12 col-md-5">   
+        		<div class="col-sm-12 col-md-4">   
                     <div class="nav_site_map hidden-xs">
                         <label for="nav_site_map_link_id" >NAVIGATION</label>
                         <div class="site_map_cols">
