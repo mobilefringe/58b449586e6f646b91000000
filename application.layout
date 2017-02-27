@@ -89,56 +89,41 @@
                     </button>
                     <ul class="dropdown-menu bottom">                                
                         <li class="mobile_menu_header" >
-                            <a href='' >STORES</a>
+                            <a href='' data-i18n="nav.stores"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/stores'>Store Directory</a>
+                            <a href='/stores' data-i18n="nav.subnav.store_directory"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/map'>Shopping Map</a>
+                            <a href='/map' data-i18n="nav.subnav.map"></a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/promotions' >PROMOTIONS</a>
+                            <a href='/promotions' data-i18n="nav.promotions"></a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/events' >EVENTS</a>
+                            <a href='/events' data-i18n="nav.events"></a>
                         </li>
                         <li class="mobile_menu_header" >
-                            <a href='/pages/sugarloaf-guest-services' >GUEST SERVICES</a>
+                            <a href='/pages/sugarloaf-guest-services' data-i18n="nav.services"></a>
                         </li>      
                         <li class="mobile_menu_header" >
-                            <a href='/jobs' >CAREERS</a>
+                            <a href='/jobs' data-i18n="nav.careers"></a>
                         </li>         
                         <li class="mobile_menu_header" >
-                            <a href='' >ABOUT US</a>
+                            <a href='' data-i18n="nav.about"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/hours'>Shopping Hours</a>
+                            <a href='/hours' data-i18n="nav.subnav.hours"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-leasing'>Leasing</a>
+                            <a href='/pages/cornwall-leasing' data-i18n="nav.subnav.leasing"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-mall-info'>Mall Info</a>
+                            <a href='/pages/cornwall-mall-info' data-i18n="nav.subnav.mall_info"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-accessibility'>Accessibility</a>
-                        </li>        
-                        <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-community-wifi'>Community Relations</a>
+                          <a href='/pages/cornwall-contact-us' data-i18n="nav.subnav.contact"></a>
                         </li>
-                        <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-contact-us'>Contact Us</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-security'>Security</a>
-                        </li>
-                        <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-parking-at-cornwall-centre'>Parking Info</a>
-                        </li>
-                        <li class="mobile_menu_header" >
-                            <a href='/posts' >BLOG</a>
-                        </li> 
                     </ul>
                     <a id="mobile_logo" href="/">
                         <img class="mobile_logo" ALT="mobile_logo" src="//codecloud.cdn.speedyrails.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg" />
