@@ -5,12 +5,12 @@ function init() {
     
     $("#brand_select").on('change', function() {            
         if ($(this).val() != ""){
-            window.location = "/stores/"+ $(this).val();    
+            window.location = "/stores/" + $(this).val();    
         }
     });  
     
     $("#locale_select").on('change', function() {                        
-        window.location.href = "?locale="+$(this).val();    
+        window.location.href = "?locale=" + $(this).val();    
     }); 
         
     renderHomeHours();
