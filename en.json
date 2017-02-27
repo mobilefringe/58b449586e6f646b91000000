@@ -4,12 +4,12 @@
 		"privacy_policy": "Politique de confidentialité"
 	},
 	"nav": {
-		"stores": "Stores",
-        "promotions": "Promotions",
-        "events": "Events",
-        "services": "Guest Services",
-        "careers": "Careers",
-        "about": "About Us",
+		"stores": "STORES",
+        "promotions": "PROMOTIONS",
+        "events": "EVENTS",
+        "services": "GUEST SERVICES",
+        "careers": "CAREERS",
+        "about": "ABOUT US",
 		"subnav": {
 			"store_directory": "Store Directory",
 			"map": "Shopping Map",
