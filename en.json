@@ -96,6 +96,7 @@
 	},
 	"general": {
 	    "hours": "HOURS TODAY",
+	    "telephone": "Call",
 		"search_placeholder": "Search Site",
 		"popup_name": "INSCRIVEZ-VOUS À NOTRE INFOLETTRE",
 		"popup_desc": "Inscrivez-vous pour ne rien manquer des offres exclusives, promotions, événements et autres concours tout aussi excitants!",
