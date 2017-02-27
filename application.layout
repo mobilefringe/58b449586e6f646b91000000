@@ -144,7 +144,7 @@
                                     <label for="locale_select" style="display:none"></label>
                                     <select id="locale_select">                        
                                         <option value="fr" >Français</option>
-                                        <option value="en" selected="selected">English</option>
+                                        <option value="en">English</option>
                                     </select>                    
                                 </div>
                                 <div class="select_parent pull-right">
