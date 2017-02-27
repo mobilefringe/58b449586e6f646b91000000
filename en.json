@@ -7,9 +7,9 @@
 		"stores": "Stores",
         "promotions": "Promotions",
         "events": "Events",
-        "guest_services": "Guest Services",
+        "services": "Guest Services",
         "careers": "Careers",
-        "about_us": "About Us",
+        "about": "About Us",
 		"subnav": {
 			"store_directory": "Store Directory",
 			"map": "Shopping Map",
