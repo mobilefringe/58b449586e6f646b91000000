@@ -159,8 +159,7 @@
 		"newsletter_tablet": "Sign-up"
 	},
 	"footer": {
-		"rights": "All rights reserved",
-		"design": "Designed by ",
-		"power": "Powered by "
+        "privacy": "POLITIQUE DE CONFIDENTIALITÉ",
+		"power": "Propulsé par"
 	}
 }
