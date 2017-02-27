@@ -17,12 +17,12 @@ function init() {
         }
         if(current_local == sessionStorage.primary_locale){
             setPrimaryLanguage();
-            $('#en-CA').removeClass('langSelect');
-            $('#fr-CA').addClass('langSelect');
+            // $('#en-CA').removeClass('langSelect');
+            // $('#fr-CA').addClass('langSelect');
         }else{
             setSecondaryLanguage();
-            $('#fr-CA').removeClass('langSelect');
-            $('#en-CA').addClass('langSelect');
+            // $('#fr-CA').removeClass('langSelect');
+            // $('#en-CA').addClass('langSelect');
         }
     });
     
