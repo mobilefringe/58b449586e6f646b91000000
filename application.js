@@ -705,8 +705,8 @@ function setPrimaryLanguage(){
     sessionStorage.setItem('current_locale', sessionStorage.primary_locale);
     $('.primary-locale').show(); // Shows
     $('.secondary-locale').hide();
-    $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
-    $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
+    // $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
+    // $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
     window.dispatchEvent(new Event('resize'));
 }
 
@@ -717,8 +717,8 @@ function setSecondaryLanguage(){
     sessionStorage.setItem('current_locale', sessionStorage.secondary_locale);
     $('.primary-locale').hide(); // Shows
     $('.secondary-locale').show();
-    $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
-    $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
+    // $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
+    // $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
     window.dispatchEvent(new Event('resize'));
 }
 function getUrlParameter(sParam){
