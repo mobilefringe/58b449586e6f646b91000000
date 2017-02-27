@@ -233,7 +233,7 @@
                             <div class="home_hours_info" id="prop_phone_container">
                                 <script id="prop_phone_template" type="x-tmpl-mustache/text">
                                     {%raw%}
-                                    <span class="hour_title">Call</span>
+                                    <span class="hour_title" data-i18n="general.telephone"></span>
                                     <span class="hour_info hidden-xs">{{contact_phone}}</span>
                                     <span class="hour_info visible-xs-inline-block">
                                         <a href="tel:{{contact_phone}}">{{contact_phone}}</a>    
