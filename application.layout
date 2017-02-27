@@ -140,6 +140,13 @@
                     <div class="brand_nav">
                         <div class ="row-fluid">
                             <div class="trim_screen">
+                                <div class="select_locale_parent pull-right">
+                                    <label for="locale_select" style="display:none"></label>
+                                    <select id="locale_select">                        
+                                        <option value="fr" >Français</option>
+                                        <option value="en" selected="selected">English</option>
+                                    </select>                    
+                                </div>
                                 <div class="select_parent pull-right">
                                     <label for="brand_select" style="display:none">select brand</label>
                                     <select id="brand_select">
