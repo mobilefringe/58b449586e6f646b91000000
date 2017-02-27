@@ -314,9 +314,9 @@
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title" data-i18n="nav.stores"></span>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/stores' target='_self'>Store Directory</a>
+                                <a class="site_map_submenu" href='/stores' target='_self' data-i18n="nav.subnav.store_directory"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/map' target='_self'>Shopping Map</a>
+                                <a class="site_map_submenu" href='/map' target='_self' data-i18n="nav.subnav.map"></a>
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
@@ -341,13 +341,13 @@
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title" data-i18n="nav.about"></span>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/hours' target='_self'>Shopping Hours</a>
+                                <a class="site_map_submenu" href='/hours' target='_self' data-i18n="nav.subnav.hours"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-leasing' target='_self'>Leasing</a>
+                                <a class="site_map_submenu" href='/pages/cornwall-leasing' target='_self' data-i18n="nav.subnav.leasing"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-mall-info' target='_self'>Mall Info</a>
+                                <a class="site_map_submenu" href='/pages/cornwall-mall-info' target='_self' data-i18n="nav.subnav.mall_info"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-contact-us' target='_self'>Contact Us</a>
+                                <a class="site_map_submenu" href='/pages/cornwall-contact-us' target='_self' data-i18n="nav.subnav.contact"></a>
                             </div>
                         </div>
                     </div>
