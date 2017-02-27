@@ -241,7 +241,7 @@
                                     {%endraw%}
                                 </script>
                             </div>
-                            <a href="/hours" class="check_hours">Check Holiday Hours</a>
+                            <a href="/hours" class="check_hours" data-i18n="general.holiday_hours"></a>
                         </div>
                     </div> 
                     <div class="right_feature_box">
