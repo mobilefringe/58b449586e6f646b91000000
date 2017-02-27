@@ -380,7 +380,7 @@
         </div>
         <div class="footer trim_screen">
             <span>
-                &copy; 2017 Sugarloaf Mall | <a href="/pages/cornwall-privacy-policy" target="_blank">Privacy Policy</a> | Powered By <a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a>     
+                &copy; 2017 Sugarloaf Mall | <a href="/pages/cornwall-privacy-policy" target="_blank" data-i18n="footer.privacy"></a> | <span data-i18n="footer.power"></span> <a href="http://www.mallmaverick.com/" target="_blank">Mall Maverick</a>     
             </span>
             <a href="//www.20vic.com/" target="_blank">
                 <img ALT="20vic_logo" src="//aberdeenmall.ca/system/site_images/photos/000/000/775/original/20vic_logo.png?1381341465" />
