@@ -312,7 +312,7 @@
                         <label for="nav_site_map_link_id" >NAVIGATION</label>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">STORES</span>
+                                <span class="site_map_title" data-i18n="nav.stores"></span>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/stores' target='_self'>Store Directory</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
@@ -320,26 +320,26 @@
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
-                                    <a href="/promotions">PROMOTIONS</a>  
+                                    <a href="/promotions" data-i18n="nav.promotions"></a>  
                                 </span>                                 
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
-                                    <a href="/events">EVENTS</a>                                
+                                    <a href="/events" data-i18n="nav.events"></a>                                
                                 </span>
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
-                                    <a href="/pages/sugarloaf-guest-services">GUEST SERVICES</a>                                
+                                    <a href="/pages/sugarloaf-guest-services" data-i18n="nav.services"></a>                                
                                 </span>
                             </div>
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title">
-                                    <a href="/jobs">CAREERS</a>
+                                    <a href="/jobs" data-i18n="nav.careers"></a>
                                 </span>
                             </div>
                             <div class="nav_sitemap_item">
-                                <span class="site_map_title">ABOUT US</span>
+                                <span class="site_map_title" data-i18n="nav.about"></span>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/hours' target='_self'>Shopping Hours</a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
