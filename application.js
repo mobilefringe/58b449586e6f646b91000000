@@ -9,6 +9,28 @@ function init() {
         }
     });  
     
+    //Using i18n for localization, for more info please visit http://i18next.com/
+    i18n.init({preload: [sessionStorage.primary_locale,sessionStorage.secondary_locale],resGetPath: '../__lng__.json',fallbackLng: false }, function(t) {
+        var current_local = sessionStorage.primary_locale;
+        if(typeof(sessionStorage.current_locale) != 'undefined' ){
+            current_local = sessionStorage.current_locale;
+        }
+        if(current_local == sessionStorage.primary_locale){
+            setPrimaryLanguage();
+            $('#en-CA').removeClass('langSelect');
+            $('#fr-CA').addClass('langSelect');
+        }else{
+            setSecondaryLanguage();
+            $('#fr-CA').removeClass('langSelect');
+            $('#en-CA').addClass('langSelect');
+        }
+    });
+    
+    // If there is no language set it to the primary locale.
+    if (!sessionStorage.current_locale) {
+        setPrimaryLanguage();
+    }
+    
     $("#locale_select").on('change', function() {                        
         window.location.href = "?locale=" + $(this).val();    
     }); 
@@ -672,3 +694,40 @@ function show_png_pin(trigger, map){
 		);
     });
 }
+
+
+
+
+function setPrimaryLanguage(){
+    i18n.setLng(sessionStorage.primary_locale, function(t) {
+        $(document).i18n();
+    });
+    sessionStorage.setItem('current_locale', sessionStorage.primary_locale);
+    $('.primary-locale').show(); // Shows
+    $('.secondary-locale').hide();
+    $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
+    $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
+    window.dispatchEvent(new Event('resize'));
+}
+
+function setSecondaryLanguage(){
+    i18n.setLng(sessionStorage.secondary_locale, function(t) {
+        $(document).i18n();
+    });
+    sessionStorage.setItem('current_locale', sessionStorage.secondary_locale);
+    $('.primary-locale').hide(); // Shows
+    $('.secondary-locale').show();
+    $("#search_input").attr("placeholder", i18n.t("general.search_placeholder"));
+    $("#search_input_mobile").attr("placeholder", i18n.t("general.search_placeholder"));
+    window.dispatchEvent(new Event('resize'));
+}
+function getUrlParameter(sParam){
+    var sPageURL = window.location.search.substring(1);
+    var sURLVariables = sPageURL.split('#');
+    for (var i = 0; i < sURLVariables.length; i++){
+        if (sURLVariables[0] == sParam){
+            return true;
+        }
+    }
+    return false;
+} 
