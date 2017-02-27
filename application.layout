@@ -180,13 +180,13 @@
                 </a>
                 <ul>                  
                     <li class="dropdown ">
-                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.stores"></button>                                                     
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.stores"></button>                                             
                         <ul class="dropdown-menu">                            
                             <li>
-                                <a class="nav_a" href='/stores' target='_self'><span data-i18n="nav.subnav.store_directory"></span></a>                                
+                                <a class="nav_a" href='/stores' target='_self'><span data-i18n="nav.subnav.store_directory"></span></a>             
                             </li>
                             <li>
-                                <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.map"></span></a>                                
+                                <a class="nav_a" href='/map' target='_self'><span data-i18n="nav.subnav.map"></span></a>
                             </li>
                         </ul>
                     </li>               
@@ -203,7 +203,7 @@
                         <button class="btn-nav" onclick="window.location.href='/jobs'" data-i18n="nav.careers"></button>
                     </li>             
                     <li class="dropdown ">
-                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.about"></button>                                                     
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.about"></button>                                              
                         <ul class="dropdown-menu" style="right:0px; left:auto;">                            
                             <li>
                                 <a class="nav_a" href='/hours' target='_self'><span data-i18n="nav.subnav.hours"></span></a>
@@ -212,9 +212,8 @@
                                 <a class="nav_a" href='/pages/cornwall-leasing' target='_self'><span data-i18n="nav.subnav.leasing"></span></a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-mall-info' target='_self'><span data-i18n="nav.subnav.mall_info">Mall Info</span></a>
+                                <a class="nav_a" href='/pages/cornwall-mall-info' target='_self'><span data-i18n="nav.subnav.mall_info"></span></a>
                             </li>
-                            
                             <li>
                                 <a class="nav_a" href='/pages/cornwall-contact-us' target='_self'><span data-i18n="nav.subnav.contact"></span></a> 
                             </li>
