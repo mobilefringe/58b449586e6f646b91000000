@@ -170,7 +170,7 @@
                 </a>
                 <ul>                  
                     <li class="dropdown ">
-                        <button class="btn-nav" data-toggle="dropdown">STORES</button>                                                     
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.stores">STORES</button>                                                     
                         <ul class="dropdown-menu">                            
                             <li>
                                 <a class="nav_a" href='/stores' target='_self'><span>Store Directory</span></a>                                
@@ -181,19 +181,19 @@
                         </ul>
                     </li>               
                     <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/promotions'">PROMOTIONS</button>
+                        <button class="btn-nav" onclick="window.location.href='/promotions'" data-i18n="nav.promotions">PROMOTIONS</button>
                     </li>
                     <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/events'">EVENTS</button>
+                        <button class="btn-nav" onclick="window.location.href='/events'" data-i18n="nav.events">EVENTS</button>
                     </li>
                     <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/pages/sugarloaf-guest-services'">GUEST SERVICES</button>
+                        <button class="btn-nav" onclick="window.location.href='/pages/sugarloaf-guest-services'" data-i18n="nav.services">GUEST SERVICES</button>
                     </li>            
                     <li>                        
-                        <button class="btn-nav" onclick="window.location.href='/jobs'">CAREERS</button>
+                        <button class="btn-nav" onclick="window.location.href='/jobs'" data-i18n="nav.careers">CAREERS</button>
                     </li>             
                     <li class="dropdown ">
-                        <button class="btn-nav" data-toggle="dropdown">ABOUT US</button>                                                     
+                        <button class="btn-nav" data-toggle="dropdown" data-i18n="nav.about">ABOUT US</button>                                                     
                         <ul class="dropdown-menu" style="right:0px; left:auto;">                            
                             <li>
                                 <a class="nav_a" href='/hours' target='_self'><span>Shopping Hours</span></a>                                
