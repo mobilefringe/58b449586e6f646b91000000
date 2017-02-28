@@ -40,7 +40,12 @@ function init() {
     var one_item = feature_items.slice(0,1);
     renderFeatureItems('#feature_item','#feature_item_template', one_item);
     var two_items = feature_items.slice(1,3);
-    renderFeatureItems('#home_feature','#home_feature_template', two_items);
+    if(sessionStorage.current_locale == "en-CA"){
+        renderFeatureItems('#home_feature','#home_feature_template', two_items);            
+    }
+    if(sessionStorage.current_locale == "fr-CA"){
+        renderFeatureItems('#home_feature_fr','#home_feature_template_fr', two_items);   
+    }
     
     var _fbq = window._fbq || (window._fbq = []);
     if (!_fbq.loaded) {
