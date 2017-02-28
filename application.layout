@@ -271,7 +271,7 @@
                         <div class="img_container feature_box long_feature_box">
                             <a href="{{url}}">
                                 <img class="feature_image" alt="" src="{{image_url}}">
-                                <div class=" feature_label long_feature_label">
+                                <div class="long_feature_label">
                                     {{name}}
                                 </div>
                                 
