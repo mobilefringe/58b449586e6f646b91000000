@@ -33,11 +33,11 @@ $(document).ready(function(){
         $.getJSON(pages_json).done(function(data) {
             if(sessionStorage.current_locale == "en-CA"){
                 $('#page_title').html(data.title_2);
-                $('#page_content').html(data.body_2);
+                $('#page_body').html(data.body_2);
             }
             if(sessionStorage.current_locale == "fr-CA"){
                 $('#page_title').html(data.title);
-                $('#page_content').html(data.body);
+                $('#page_body').html(data.body);
             }
             if(slug === "cornwall-contact-us") {
                 $("#contact_us").show();
