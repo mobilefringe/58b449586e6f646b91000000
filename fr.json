@@ -40,7 +40,8 @@
 	},
 	"pages": {
 	    "stores_title": "LISTE DES BOUTIQUES",
-	    "stores_category": "Categories",
+	    "stores_category": "CATÉGORIE",
+	    "stores_scrolltop": "Aller en Haut",
 	    "storedetail_website": "Visit Website",
 	    "storedetail_promos": "Sales & Promotions",
 	    "storedetail_jobs": "Job Opportunities",
