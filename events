@@ -1,7 +1,7 @@
 <div class="promo_page">
     <h1 class="page_title" data-i18n="pages.events_title"></h1> <!-- Events -->
     <hr>
-    <h3 id="no_events" class="hidden_now">There are currently no events available, please check back again later.</h3>
+    <h3 id="no_events" class="hidden_now" data-i18n="pages.events_none"></h3> <!-- No Events Message -->
     <div id="events_container">
         <script id="events_template" type="x-tmpl-mustache/text">
             <div class="row store_promo">
