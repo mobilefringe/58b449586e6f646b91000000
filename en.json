@@ -40,7 +40,8 @@
 	},
 	"pages": {
 	    "stores_title": "STORE LIST",
-	    "stores_category": "Categories",
+	    "stores_category": "CATEGORIES",
+	    "stores_scrolltop": "Go to Top",
 	    "storedetail_website": "Visit Website",
 	    "storedetail_promos": "Sales & Promotions",
 	    "storedetail_jobs": "Job Opportunities",
