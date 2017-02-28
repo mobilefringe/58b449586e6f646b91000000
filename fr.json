@@ -46,13 +46,14 @@
 	    "storedetail_promos": "PROMOTIONS DE MAGASIN",
 	    "storedetail_jobs": "CARRIÈRES",
 	    "map_title": "Plan du Centre",
+	    "promotions_mall_title": "Promotions du centre commercial",
+	    "promotions_store_title": "Boutique Promotions",
+	    "promotions_retailer_subtitle": "Store Sales & Promotions",
+	    "promotions_none": "There are currently no promotions listed. Please check back soon.",
 	    
 	    "events_title": "Events",
 	    "events_none": "There are currently no events listed. Please check back soon.",
-	    "promotions_title": "Promotions",
-	    "promotions_mall_subtitle": "Mall Sales & Promotions",
-	    "promotions_retailer_subtitle": "Store Sales & Promotions",
-	    "promotions_none": "There are currently no promotions listed. Please check back soon.",
+	    
 	    "guest_title": "Guest Services",
 	    "jobs_title": "Jobs",
 	    "jobs_none": "There are currently no job postings listed. Please check back soon.",
