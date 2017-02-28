@@ -2,7 +2,7 @@
     <div>
         <h1 class="page_title" data-i18n="pages.promotions_mall_title"></h1> <!-- Mall Promotions -->
         <hr>
-        <h3 id="mall_promos" class="hidden_now">There are currently no mall promotions available, please check back again later.</h3>
+        <h3 id="mall_promos" class="hidden_now" data-i18n="pages.promotions_none"></h3> <!-- No Promotions Message -->
         <div id="mall_promo_container">
             <script id="mall_promo_template" type="x-tmpl-mustache/text">
                 <div class="row-fluid store_promo">
