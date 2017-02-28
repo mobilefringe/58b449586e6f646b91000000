@@ -30,8 +30,14 @@ $(document).ready(function(){
         var slug = pathArray[pathArray.length-1];
         var pages_json = "//www.sugarloafmall.ca/pages/" + slug + ".json"
         $.getJSON(pages_json).done(function(data) {
-            $('#page_title').html(data.title);
-            $('#page_body').html(data.body);
+            if(sessionStorage.current_locale == "en-CA"){
+                $('#page_title').html(data.title);
+                $('#page_content').html(data.body);
+            }
+            if(sessionStorage.current_locale == "fr-CA"){
+                $('#page_title').html(data.title_2);
+                $('#page_content').html(data.body_2);
+            }
             if(slug === "cornwall-contact-us") {
                 $("#contact_us").show();
             }
