@@ -274,7 +274,6 @@
                                 <div class="long_feature_label">
                                     {{name}}
                                 </div>
-                                
                             </a>
                         </div>
                     </div> 
@@ -287,11 +286,10 @@
                     <div class="col-sm-6">
                         <div class="img_container feature_box long_feature_box">
                             <a href="{{url}}">
-                                <img class="feature_image" alt="" src="{{image_url}}">
+                                <img class="feature_image" alt="" src="{{image_url_2}}">
                                 <div class="long_feature_label">
-                                    {{name}}
+                                    {{name_2}}
                                 </div>
-                                
                             </a>
                         </div>
                     </div> 
