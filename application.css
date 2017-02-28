@@ -2329,6 +2329,7 @@ td.stores_pin{
 }
 .long_feature_label {
     opacity: 0.9;
+    font-family: futura_condensed;
 }
 .stores_table_headers{
     background-color: #7d1f40;
