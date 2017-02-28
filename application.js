@@ -492,33 +492,9 @@ function renderStoreDetails(container, template, collection, slug){
         else{
             val.phone_show = "display:none";
         }
-        
-        if (val.twitter != null && val.twitter.length > 0){
-            val.twitter_show = "display:inline-block";
-        }
-        else{
-            val.twitter_show = "display:none";
-        }
-        
-        if (val.twitter_show == "display:none" && val.phone_show == "display:none" ){
-            val.show_line = "display:none";
-        }
-        else{
-            val.show_line = "display:block";
-        }
-        if((val.twitter == null || val.twitter == "") && (val.facebook == "" || val.facebook == null)){
-            val.hide_social = "display:none;";
-        }
-        if (val.facebook != null && val.facebook.length > 0){
-            val.facebook_show = "display:inline-block";
-        }
-        else{
-            val.facebook_show = "display:none";
-        }
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
@@ -578,7 +554,6 @@ function renderStoreList(container, template, collection, type){
         var upper_current_initial = current_initial.toUpperCase();
         item_rendered.push(rendered);
     });
-    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
