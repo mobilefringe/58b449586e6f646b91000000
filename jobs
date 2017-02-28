@@ -1,7 +1,7 @@
 <div>
     <h1 class="page_title" data-i18n="pages.jobs_title"></h1> <!-- Careers Title -->
     <hr>
-    <h3 id="no_jobs" class="hidden_now"></h3> <!-- No Jobs Message -->
+    <h3 id="no_jobs" class="hidden_now" data-i18n="pages.jobs_none"></h3> <!-- No Jobs Message -->
     <div class="accordion" id="accordion2">
         <div id="mall_jobs_container">
             <script id="mall_jobs_template" type="x-tmpl-mustache/text">
