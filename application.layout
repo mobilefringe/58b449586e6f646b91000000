@@ -281,6 +281,23 @@
                     {%endraw%}
                 </script>   
             </div>
+            <div class="feature_links" id="home_feature_fr">
+                <script id="home_feature_template_fr" type="x-tmpl-mustache/text">
+                    {%raw%}
+                    <div class="col-sm-6">
+                        <div class="img_container feature_box long_feature_box">
+                            <a href="{{url}}">
+                                <img class="feature_image" alt="" src="{{image_url}}">
+                                <div class="long_feature_label">
+                                    {{name}}
+                                </div>
+                                
+                            </a>
+                        </div>
+                    </div> 
+                    {%endraw%}
+                </script>   
+            </div>
         </div>
     </div>
     <div class="line_break"></div>
