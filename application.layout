@@ -272,7 +272,7 @@
                             <a href="{{url}}">
                                 <img class="feature_image" alt="" src="{{image_url}}">
                                 <div class="long_feature_label">
-                                    <p>{{name}}</p>
+                                    {{name}}
                                 </div>
                                 
                             </a>
