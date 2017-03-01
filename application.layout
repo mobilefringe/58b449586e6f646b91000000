@@ -58,8 +58,8 @@
     <script>
         setEndPoint('//sugarloaf.mallmaverick.com/api/v3/sugarloaf/all.json');
         
-        sessionStorage.setItem('primary_locale', 'fr-CA');
-        sessionStorage.setItem('secondary_locale', 'en-CA');
+        sessionStorage.setItem('primary_locale', 'en-CA');
+        sessionStorage.setItem('secondary_locale', 'fr-CA');
         
         if(getRequestParam('locale') == 'en'){
             sessionStorage.setItem('current_locale',sessionStorage.primary_locale);
