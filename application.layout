@@ -122,7 +122,7 @@
                             <a href='/pages/sugarloaf-mall-information' data-i18n="nav.subnav.mall_info"></a>
                         </li>
                         <li class="mobile_menu_item">
-                          <a href='/pages/cornwall-contact-us' data-i18n="nav.subnav.contact"></a>
+                          <a href='/pages/sugarloaf-contact-us' data-i18n="nav.subnav.contact"></a>
                         </li>
                     </ul>
                     <a id="mobile_logo" href="/">
@@ -200,7 +200,7 @@
                                 <a class="nav_a" href='/pages/sugarloaf-mall-information' target='_self'><span data-i18n="nav.subnav.mall_info"></span></a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-contact-us' target='_self'><span data-i18n="nav.subnav.contact"></span></a> 
+                                <a class="nav_a" href='/pages/sugarloaf-contact-us' target='_self'><span data-i18n="nav.subnav.contact"></span></a> 
                             </li>
                         </ul>
                     </li>
@@ -362,7 +362,7 @@
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/sugarloaf-mall-information' target='_self' data-i18n="nav.subnav.mall_info"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-contact-us' target='_self' data-i18n="nav.subnav.contact"></a>
+                                <a class="site_map_submenu" href='/pages/sugarloaf-contact-us' target='_self' data-i18n="nav.subnav.contact"></a>
                             </div>
                         </div>
                     </div>
