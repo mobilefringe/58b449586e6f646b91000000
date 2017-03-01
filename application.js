@@ -418,7 +418,7 @@ function renderPromotions(container, template, collection){
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > 0){
-            val.promo_image_url_abs  = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
+            val.promo_image_url_abs  = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         }
         
         var show_date = moment(val.show_on_web_date);
@@ -458,7 +458,7 @@ function renderPromoDetails(container, template, collection){
         }
         else{
             val.store_name = mall_name;
-            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
+            val.image_url = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
@@ -614,7 +614,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
+            val.image_url = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         } else {
             val.image_url = val.image_url;
         }
@@ -634,7 +634,7 @@ function renderPostDetails(container, template, collection){
     var template_html = $(template).html();
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
+            val.image_url = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         } else {
             val.image_url = val.image_url;
         }
