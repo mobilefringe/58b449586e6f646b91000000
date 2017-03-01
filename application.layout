@@ -361,7 +361,30 @@
                             </div>
                         </div>
                     </div>
+                  <!--  <div class="social_links hidden-xs">-->
+    		            <!--<span>-->
+    		            <!--    <a href="//www.pinterest.com/cornwallcentre/" target="_blank">-->
+    		            <!--        <i class="fa fa-pinterest social_icon" aria-hidden="true"></i>-->
+    		            <!--    </a>-->
+    		            <!--</span>-->
+    		            <!--<span>-->
+    		            <!--    <a href="//www.youtube.com/user/CornwallCentre" target="_blank">-->
+    		            <!--        <i class="fa fa-youtube social_icon" aria-hidden="true"></i>-->
+		                <!--    </a>-->
+	                 <!--   </span>-->
+    		            <!--<span>-->
+    		            <!--    <a href="//plus.google.com/113773191865855064312" target="_blank">-->
+    		            <!--        <i class="fa fa-google-plus-official social_icon" aria-hidden="true"></i>-->
+		                <!--    </a>-->
+	                 <!--   </span>-->
+                  <!--      <span>-->
+                  <!--          <a href="https://www.instagram.com/cornwallcentre/" target="_blank">-->
+                  <!--              <i class="fa fa-instagram social_icon" aria-hidden="true"></i>-->
+                  <!--          </a>-->
+                  <!--      </span>-->
+                  <!--  </div>-->
                 </div>
+                <div class="line_break hidden-xs"></div>
         	</div>
         </div>
         <div class="footer trim_screen">
