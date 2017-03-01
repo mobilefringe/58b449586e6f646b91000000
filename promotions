@@ -2,7 +2,7 @@
     <div>
         <h1 class="page_title" data-i18n="pages.promotions_mall_title"></h1> <!-- Mall Promotions -->
         <hr>
-        <h3 id="mall_promos" class="hidden_now" data-i18n="pages.promotions_none"></h3> <!-- No Mall Promotions Message -->
+        <h3 id="mall_promos" class="hidden_now" data-i18n="pages.promotions_mall_none"></h3> <!-- No Mall Promotions Message -->
         <div id="mall_promo_container">
             <script id="mall_promo_template" type="x-tmpl-mustache/text">
                 <div class="row-fluid store_promo">
@@ -25,7 +25,7 @@
         <div class="line_break"></div>
         <h1 class="page_title" id="store_promos" data-i18n="pages.promotions_store_title"></h1> <!-- Store Promotions -->
         <hr>
-        <h3 id="store_promo" class="hidden_now" data-i18n="pages.promotions_none"></h3> <!-- No Store Promotions Message -->
+        <h3 id="store_promo" class="hidden_now" data-i18n="pages.promotions_store_none"></h3> <!-- No Store Promotions Message -->
         <div id="store_promo_container"> 
             <script id="store_promo_template" type="x-tmpl-mustache/text">
                 <div class="row-fluid store_promo">
