@@ -599,9 +599,14 @@ legend{
     padding: 10px 25px;
 }
 
-.stores_table_headers{
+.stores_table_headers {
+    padding-top: 8px;
+    padding-left: 12px;
+    height: 27px;
 	background-color: black;
-	color:white;
+	color: white;
+    text-align: left;
+    font-size: 14pt;
 }
 
 .stores_table_headers .pull-right {
@@ -2331,10 +2336,18 @@ td.stores_pin{
     opacity: 0.9;
     font-family: futura_condensed;
 }
-.stores_table_headers{
+.stores_table_headers {
+    padding: 7px 0 7px 12px;
     background-color: #7d1f40;
+    font-si
+}
+.stores_table_headers .pull-right{
+    color: #ededed;
 }
 
+.stores_table_headers .pull-right .arrow-up{
+    border-bottom-color: #ededed;
+}
 .controls{
     background-color: #4d413e;
 }
@@ -2356,13 +2369,7 @@ td.stores_pin{
     background: #e5f5fd; 
 }
 
-.stores_table_headers .pull-right{
-    color: #ededed;
-}
 
-.stores_table_headers .pull-right .arrow-up{
-    border-bottom-color: #ededed;
-}
 
 .store_btn{
     background-color:#00a3de;   
