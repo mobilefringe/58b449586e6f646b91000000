@@ -264,7 +264,7 @@ function renderJobs(container, template, collection){
             val.store_slug = getStoreDetailsByID(val.jobable_id).slug;
         }
         else{
-            val.store_name = "Cornwall Centre";
+            val.store_name = mall_name;
         }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
@@ -283,6 +283,7 @@ function renderJobs(container, template, collection){
 }
 
 function renderJobDetails(container, template, collection){
+    var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
@@ -295,8 +296,7 @@ function renderJobDetails(container, template, collection){
             val.store_name = store_details.name;
         }
         else{
-            val.store_name = "Cornwall Centre";
-            
+            val.store_name = mall_name;
         }
         
         var show_date = moment(val.show_on_web_date);
@@ -315,6 +315,7 @@ function renderJobDetails(container, template, collection){
 }
 
 function renderEvents(container, template, collection){
+    var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
@@ -327,8 +328,7 @@ function renderEvents(container, template, collection){
             val.event_image_url = store_details.store_front_url_abs;
         }
         else {
-            val.store_name = "Cornwall Centre";
-            // val.event_image_url = val.event_image_url_abs;
+            val.store_name = mall_name;
         }
         if(val.event_image_url.indexOf('missing.png') < 0){
             val.event_image_url = val.logo;
@@ -357,6 +357,7 @@ function renderEvents(container, template, collection){
 }
 
 function renderEventDetails(container, template, collection){
+    var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
@@ -375,7 +376,7 @@ function renderEventDetails(container, template, collection){
             }
         }
         else{
-            val.store_name = "Cornwall Centre";
+            val.store_name = mall_name;
             val.image_url = "";
         }
         
@@ -399,6 +400,7 @@ function renderEventDetails(container, template, collection){
 }
 
 function renderPromotions(container, template, collection){
+    var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
@@ -411,7 +413,7 @@ function renderPromotions(container, template, collection){
             val.image_url = store_details.store_front_url_abs;
         }
         else{
-            val.store_name = "Cornwall Centre";
+            val.store_name = mall_name;
             // val.image_url = "";
         }
         
@@ -436,6 +438,7 @@ function renderPromotions(container, template, collection){
 }
 
 function renderPromoDetails(container, template, collection){
+    var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
@@ -454,7 +457,7 @@ function renderPromoDetails(container, template, collection){
             }
         }
         else{
-            val.store_name = "Cornwall Centre";
+            val.store_name = mall_name;
             val.image_url = "//www.mallmaverick.com/system/sites/logo_images/000/000/023/original/mall_logo.png?1381508700";
         }
         
