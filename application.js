@@ -17,9 +17,6 @@ function init() {
         setPrimaryLanguage();
     }
     
-    var header_stores = getStoresList();
-    renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
-    
     if(sessionStorage.current_locale == "en-CA"){
         $("#brand_select").prepend("<option selected>Brands</option>");   
         $("#locale_select").val("en");
@@ -29,14 +26,14 @@ function init() {
         $("#locale_select").val("fr");
     }
     
+    var header_stores = getStoresList();
+    renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
     $("#brand_select").on('change', function() {            
         if ($(this).val() != ""){
             window.location = "/stores/" + $(this).val();    
         }
     });  
-    
-    
-    
+
     $("#locale_select").on('change', function() {                        
         window.location.href = "?locale=" + $(this).val();    
     }); 
