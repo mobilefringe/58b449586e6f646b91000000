@@ -24,7 +24,6 @@ $(document).ready(function(){
         init();
         
         var prop_details = getPropertyDetails();
-        console.log(prop_details);
         renderPropertyDetails('#map_container', '#map_template', prop_details);
             
         var pathArray = window.location.pathname.split( '/' );
