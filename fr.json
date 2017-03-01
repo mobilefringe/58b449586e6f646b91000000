@@ -55,7 +55,7 @@
 	    "jobs_title": "Carrières",
 	    "jobs_none": "Il n'y a actuellement aucune offre d'emploi disponible. Veuillez revenir bientôt.",
 	    "hours_title": "Heures",
-	    "hours_holiday": "Heures de fête"
+	    "hours_holiday_title": "Heures de fête"
 	},
 	"general": {
 	    "hours": "HEURES",
