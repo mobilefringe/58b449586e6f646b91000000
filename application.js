@@ -1,14 +1,4 @@
 function init() {
-    var header_stores = getStoresList();
-    renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
-    $("#brand_select").prepend("<option selected>Brands</option>");
-    
-    $("#brand_select").on('change', function() {            
-        if ($(this).val() != ""){
-            window.location = "/stores/" + $(this).val();    
-        }
-    });  
-    
     //Using i18n for localization, for more info please visit http://i18next.com/
     i18n.init({preload: [sessionStorage.primary_locale,sessionStorage.secondary_locale],resGetPath: '../__lng__.json',fallbackLng: false }, function(t) {
         var current_local = sessionStorage.primary_locale;
@@ -26,6 +16,18 @@ function init() {
     if (!sessionStorage.current_locale) {
         setPrimaryLanguage();
     }
+    
+    var header_stores = getStoresList();
+    renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
+    $("#brand_select").prepend("<option selected>Brands</option>");
+    
+    $("#brand_select").on('change', function() {            
+        if ($(this).val() != ""){
+            window.location = "/stores/" + $(this).val();    
+        }
+    });  
+    
+    
     
     $("#locale_select").on('change', function() {                        
         window.location.href = "?locale=" + $(this).val();    
