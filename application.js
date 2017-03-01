@@ -19,7 +19,13 @@ function init() {
     
     var header_stores = getStoresList();
     renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
-    $("#brand_select").prepend("<option selected>Brands</option>");
+    if(sessionStorage.current_locale == "en-CA"){
+        $("#brand_select").prepend("<option selected>Brands</option>");            
+    }
+    if(sessionStorage.current_locale == "fr-CA"){
+        $("#brand_select").prepend("<option selected>Boutiques</option>");   
+    }
+    
     
     $("#brand_select").on('change', function() {            
         if ($(this).val() != ""){
