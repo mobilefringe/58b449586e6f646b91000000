@@ -253,6 +253,7 @@ function renderHomeHours(container, template, collection){
 }
 
 function renderJobs(container, template, collection){
+    var mall_name = getPropertyDetails().name;
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
