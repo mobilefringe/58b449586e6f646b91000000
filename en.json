@@ -17,10 +17,6 @@
             "leasing": "Leasing",
             "mall_info": "Mall Info",
             "contact": "Contact Us"
-		},
-		"locale": {
-			"english": "English",
-			"french": "Français"
 		}
 	},
 	"days_of_week": {
@@ -31,12 +27,6 @@
 		"4": "Thursday",
 		"5": "Friday",
 		"6": "Saturday"
-	},
-	"home": {
-		"welcome": "Welcome to ",
-		"home_hours": "Open today until ",
-		"centre_hours_title": "Centre Hours",
-		"view_hours": "View All Hours"
 	},
 	"pages": {
 	    "stores_title": "STORE LIST",
@@ -65,66 +55,7 @@
 	"general": {
 	    "hours": "HOURS TODAY",
 	    "telephone": "Call",
-	    "holiday_hours": "Check Holiday Hours",
-		"search_placeholder": "Search Site",
-		"popup_name": "INSCRIVEZ-VOUS À NOTRE INFOLETTRE",
-		"popup_desc": "Inscrivez-vous pour ne rien manquer des offres exclusives, promotions, événements et autres concours tout aussi excitants!",
-		"popup_field_name": "NOM",
-		"popup_field_email": "COURRIEL",
-		"popup_field_postal": "CODE POSTAL",
-		"popup_agree": "Je consens à recevoir des courriels de Place Vertu.",
-		"popup_hide": "Ne plus afficher ce message aujourd'hui",
-		"enter_email": "entrez votre courriel",
-		"popup_thankyou": "Merci!",
-		"to": "au",
-		"hours": "Heures",
-		"todays_hours": "Heures d'ouverture",
-		"closed": "Fermé",
-		"regular_hours": "Heures d'ouverture",
-		"holiday_hours": "Horaire des jours fériés",
-		"gift_card": "Carte Cadeau",
-		"be_the_first_to_know": "Soyez les premiers à être informés",
-		"join_txt": "Abonnez-vous et restez informés!",
-		"click_more_button": "Cliquez pour plus de détails",
-		"powered_by_mall_maverick": "Propulsé par Mall Maverick",
-		"all_rights_reserved": "Tous droits réservés",
-		"directions": "Directions",
-		"promotion": "Promotion",
-		"career": "Carrière",
-		"no_jobs": "Aucune information pour le moment. Revenez-nous bientôt! ",
-		"no_promotions": "Aucune information pour le moment. Revenez-nous bientôt! ",
-		"no_events": "Aucune information pour le moment. Revenez-nous bientôt! ",
-		"no_stores": "Aucune information pour le moment. Revenez-nous bientôt! ",
-		"404_header": "Désolé, aucun résultat ne correspond à votre recherche.",
-		"404_message": "Merci de visiter le site Web de Place Vertu. Malheureusement, aucun résultat ne correspond à votre recherche. Afin de trouver ce que vous cherchez, veuillez utiliser le champ de recherche ou le menu de navigation ci-dessus. Merci de visiter Place Vertu. Bonne journée!",
-		"seach": "RECHERCHE",
-		"results": "Résultats",
-		"general.to": "à",
-		"loading_stores": "Téléchargement de magasins…",
-		"loading_promotions": "Téléchargement de promotions…",
-		"loading_jobs": "Téléchargement d'emplois…",
-		"loading_events": "Téléchargement d'événements…",
-		"submit": "Soumettre",
-		"agree_newsletter": "Je consens à recevoir des courriels de Place Vertu.",
-		"visit_website": " Visitez le Site",
-		"contact_info": "Contact",
-		"store_details": "Information sur le magasin",
-		"store_hours": "Horaire spécifique de certains magasins"
-	},
-	"social": {
-		"message": "Connect with Us",
-		"facebook": "Like on Facebook",
-		"facebook_tablet": "Like",
-		"twitter": "Follow on Twitter",
-		"twitter_tablet": "Follow",
-		"pinterest": "Follow on Pinterest",
-		"pinterest_tablet": "Pinterest",
-		"youtube": "Watch on YouTube",
-		"youtube_tablet": "YouTube",
-		"instagram": "Follow on Instagram",
-		"instagram_tablet": "Instagram",
-		"newsletter": "Sign-up to Newsletter",
-		"newsletter_tablet": "Sign-up"
+	    "holiday_hours": "Check Holiday Hours"
 	},
 	"footer": {
         "privacy": "PRIVACY POLICY",
