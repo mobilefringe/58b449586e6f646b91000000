@@ -119,7 +119,7 @@
                             <a href='/pages/sugarloaf-leasing' data-i18n="nav.subnav.leasing"></a>
                         </li>
                         <li class="mobile_menu_item">
-                            <a href='/pages/cornwall-mall-info' data-i18n="nav.subnav.mall_info"></a>
+                            <a href='/pages/sugarloaf-mall-information' data-i18n="nav.subnav.mall_info"></a>
                         </li>
                         <li class="mobile_menu_item">
                           <a href='/pages/cornwall-contact-us' data-i18n="nav.subnav.contact"></a>
@@ -197,7 +197,7 @@
                                 <a class="nav_a" href='/pages/sugarloaf-leasing' target='_self'><span data-i18n="nav.subnav.leasing"></span></a>
                             </li>
                             <li>
-                                <a class="nav_a" href='/pages/cornwall-mall-info' target='_self'><span data-i18n="nav.subnav.mall_info"></span></a>
+                                <a class="nav_a" href='/pages/sugarloaf-mall-information' target='_self'><span data-i18n="nav.subnav.mall_info"></span></a>
                             </li>
                             <li>
                                 <a class="nav_a" href='/pages/cornwall-contact-us' target='_self'><span data-i18n="nav.subnav.contact"></span></a> 
@@ -360,7 +360,7 @@
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/sugarloaf-leasing' target='_self' data-i18n="nav.subnav.leasing"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
-                                <a class="site_map_submenu" href='/pages/cornwall-mall-info' target='_self' data-i18n="nav.subnav.mall_info"></a>
+                                <a class="site_map_submenu" href='/pages/sugarloaf-mall-information' target='_self' data-i18n="nav.subnav.mall_info"></a>
                                 <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                                 <a class="site_map_submenu" href='/pages/cornwall-contact-us' target='_self' data-i18n="nav.subnav.contact"></a>
                             </div>
