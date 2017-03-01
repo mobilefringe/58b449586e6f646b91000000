@@ -45,8 +45,6 @@ function init() {
     
     var feature_items = getFeatureList();
     var one_item = feature_items.slice(0,1);
-    
-    
     var two_items = feature_items.slice(1,3);
     if(sessionStorage.current_locale == "en-CA"){
         renderFeatureItems('#feature_item','#feature_item_template', one_item);
