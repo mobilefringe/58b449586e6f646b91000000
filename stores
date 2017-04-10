@@ -10,7 +10,7 @@
             </li>
             <li class="category_tab">
                 <a href="#category" data-toggle="tab">
-                    <span data-i18n="pages.stores_category"> <span class="arrow-down"></span>    </span>
+                    <span data-i18n="pages.stores_category"></span><span class="arrow-down"></span>    
                 </a>                
             </li>
         </ul>
