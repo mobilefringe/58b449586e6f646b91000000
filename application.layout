@@ -58,6 +58,16 @@
     <script>
         setEndPoint('//sugarloaf.mallmaverick.com/api/v3/sugarloaf/all.json');
         
+        Cookies.set('primary_locale', 'fr-CA');
+        Cookies.set('secondary_locale', 'en-CA');
+
+        if(getRequestParam('locale') == 'fr'){
+            setCurrentLocale(Cookies.get('primary_locale'));
+            
+        } else if(getRequestParam('locale') == 'en'){
+            setCurrentLocale(Cookies.get('secondary_locale'));
+        }
+        
         sessionStorage.setItem('primary_locale', 'fr-CA');
         sessionStorage.setItem('secondary_locale', 'en-CA');
         
