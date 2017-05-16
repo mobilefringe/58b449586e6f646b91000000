@@ -63,7 +63,6 @@
 
         if(getRequestParam('locale') == 'fr'){
             setCurrentLocale(Cookies.get('primary_locale'));
-            
         } else if(getRequestParam('locale') == 'en'){
             setCurrentLocale(Cookies.get('secondary_locale'));
         }
