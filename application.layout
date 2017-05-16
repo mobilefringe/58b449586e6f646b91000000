@@ -67,15 +67,6 @@
         } else if(getRequestParam('locale') == 'en'){
             setCurrentLocale(Cookies.get('secondary_locale'));
         }
-        
-        sessionStorage.setItem('primary_locale', 'fr-CA');
-        sessionStorage.setItem('secondary_locale', 'en-CA');
-        
-        if(getRequestParam('locale') == 'fr'){
-            sessionStorage.setItem('current_locale',sessionStorage.primary_locale);
-        }else if(getRequestParam('locale') == 'en'){
-            sessionStorage.setItem('current_locale',sessionStorage.secondary_locale);
-        }
     </script>
 </head>
 
