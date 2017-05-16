@@ -17,6 +17,10 @@ function init() {
         setPrimaryLanguage();
     }
     
+    function setCurrentLocale(locale){
+        Cookies.set('current_locale', locale);
+    }
+
     var header_stores = getStoresList();
     renderStoreList('#brand_select','#brand_select_template', header_stores, "stores");
     $("#brand_select").on('change', function() {            
