@@ -589,36 +589,3 @@ function show_png_pin(trigger, map){
     });
 }
 
-
-
-
-function setPrimaryLanguage(){
-    i18n.setLng(Cookies.get('primary_locale'), function(t) {
-        $(document).i18n();
-    });
-    Cookies.set('current_locale', Cookies.get('primary_locale'))
-    $('.primary-locale').show(); // Shows
-    $('.secondary-locale').hide();
-    // window.dispatchEvent(new Event('resize'));
-}
-
-function setSecondaryLanguage(){
-    i18n.setLng(Cookies.get('secondary_locale'), function(t) {
-        $(document).i18n();
-    });
-    Cookies.set('current_locale', Cookies.get('secondary_locale'))
-    $('.secondary-locale').show();
-    $('.primary-locale').hide();
-    // window.dispatchEvent(new Event('resize'));
-}
-
-function getUrlParameter(sParam){
-    var sPageURL = window.location.search.substring(1);
-    var sURLVariables = sPageURL.split('#');
-    for (var i = 0; i < sURLVariables.length; i++){
-        if (sURLVariables[0] == sParam){
-            return true;
-        }
-    }
-    return false;
-} 
