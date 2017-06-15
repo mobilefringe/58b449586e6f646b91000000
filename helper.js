@@ -15,12 +15,18 @@ function init() {
     });
     
     // If there is no language set it to the primary locale.
-    // log(Cookies.get('current_locale'))
     if (!Cookies.get('current_locale')) {
         setPrimaryLanguage();
     }
     
-    
+    if(Cookies.get('current_locale') == "en-CA"){
+        $("#brand_select").prepend("<option selected>Brands</option>");   
+        $("#locale_select").val("en");
+    }
+    if(Cookies.get('current_locale') == "fr-CA"){
+        $("#brand_select").prepend("<option selected>Boutiques</option>"); 
+        $("#locale_select").val("fr");
+    }
     
     $("#brand_select").on('change', function() {            
         if ($(this).val() != ""){
@@ -71,14 +77,7 @@ function setCurrentLocale(locale){
     Cookies.set('current_locale', locale);
 }
 
-if(Cookies.get('current_locale') == "en-CA"){
-    $("#brand_select").prepend("<option selected>Brands</option>");   
-    $("#locale_select").val("en");
-}
-if(Cookies.get('current_locale') == "fr-CA"){
-    $("#brand_select").prepend("<option selected>Boutiques</option>"); 
-    $("#locale_select").val("fr");
-}
+
     
 function setPrimaryLanguage(){
     i18n.setLng(Cookies.get('primary_locale'), function(t) {
