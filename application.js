@@ -209,7 +209,7 @@ function renderHomeHours(container, template, collection){
             if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
                 var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                 var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                val.h = close_time.format("h:mma");
+                val.h = open_time.format("h:mma") + "-" + close_time.format("h:mma");
             } else {
                 val.close_time = "Closed Today";
             }    
