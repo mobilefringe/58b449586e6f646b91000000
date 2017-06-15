@@ -24,26 +24,30 @@
 </div>
 <scipt src="//codecloud.cdn.speedyrails.net/sites/582e04fa6e6f644b9c000000/text/javascript/1478472594000/lightbox.min.js"></scipt>
 <script>
-    $(document).ready(function(){
-        function renderAll(){
-            init();
-            var events = getEventsList().sortBy(function(o){ return o.start_date });
-            var prop = getPropertyDetails();
-            var published_events = [];
-            $.each(events, function(key, val){
-                today = moment();
-                webDate = moment(val.show_on_web_date)
-                if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
-                    published_events.push(val);
-                } 
-            });
-            if(published_events.length > 0){
-                renderEvents("#events_container","#events_template", published_events);
-            }
-            else{
-                $('#no_events').show()
-            }
+$(document).ready(function(e){
+    init(e);
+    function renderAll(){
+        var events = getEventsList().sortBy(function(o){ return o.start_date });
+        var prop = getPropertyDetails();
+        var published_events = [];
+        $.each(events, function(key, val){
+            today = moment();
+            webDate = moment(val.show_on_web_date)
+            if (today.tz(getPropertyTimeZone()) >= webDate.tz(getPropertyTimeZone())) {
+                published_events.push(val);
+            } 
+        });
+        if(published_events.length > 0){
+            renderEvents("#events_container","#events_template", published_events);
         }
-        loadMallDataCached(renderAll); 
-    })
+        else{
+            $('#no_events').show()
+        }
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    loadMallDataCached(renderAll); 
+})
 </script>
