@@ -203,7 +203,7 @@ function renderHomeHours(container, template, collection){
         }  
         if(Cookies.get('current_locale') == "fr-CA"){
             var french_day = moment().locale('fr-ca');
-            val.weekday = french_day.format("LLLL");
+            val.weekday = french_day.format("ddd");
         }  
         if(Cookies.get('current_locale') == "en-CA"){
             if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
