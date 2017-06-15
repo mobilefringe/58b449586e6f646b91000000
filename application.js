@@ -74,43 +74,38 @@ function renderFeatureItems(feature_item, feature_item_template, feature_items){
     $(feature_item).html(item_rendered.join(''));
 }
 
-function renderHours(container, template, collection, type){
-    var item_list = [];
-    var item_rendered = [];
-    var template_html = $(template).html();
-    Mustache.parse(template_html);   // optional, speeds up future uses
-    if (type == "reg_hours") {
-        $.each( collection , function( key, val ) {
+if (type == "reg_hours") {
+        $.each(collection, function(key, val) {
             if (!val.store_id && val.is_holiday == false) {
-                switch(val.day_of_week) {
-                    case 0:
-                        val.day = "Sunday";
-                        break;
-                    case 1:
-                        val.day = "Monday";
-                        break;
-                    case 2:
-                        val.day = "Tuesday";
-                        break;
-                    case 3:
-                        val.day = "Wednesday";
-                        break;
-                    case 4:
-                        val.day = "Thursday";
-                        break;
-                    case 5:
-                        val.day = "Friday";
-                        break;
-                    case 6:
-                        val.day = "Saturday";
-                        break;
+                var day = getDay(val.day_of_week);
+                val.day = day;
+            
+                // var today = moment().tz(getPropertyTimeZone());
+                // if(val.day_of_week == parseInt(today.format('d'))){
+                //     val.active_class = "drop-down-row-today";
+                // }
+                // else{
+                //     val.active_class = "";
+                // }
+                if(Cookies.get('current_locale') == "en-CA"){
+                    if (val.open_time && val.close_time && val.is_closed == false){
+                        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                        val.close_time = close_time.format("h:mma");
+                        val.h = open_time.format("h:mma") + " - " + close_time.format("h:mma");
+                    } else {
+                        val.h = "Closed";
+                    }
                 }
-                if (val.open_time && val.close_time && val.is_closed == false){
-                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
-                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = open_time.format("h:mma") + " - " + close_time.format("h:mma")
-                } else {
-                    "Closed";
+                if(Cookies.get('current_locale') == "fr-CA"){
+                    if (val.open_time && val.close_time && val.is_closed == false){
+                        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                        val.close_time = close_time.format("h:mma");
+                        val.h = open_time.format("H") + "h" + open_time.format("mm") + " à " + close_time.format("H") + "h" + close_time.format("mm");
+                    } else {
+                        val.h = "Closed";
+                    }
                 }
                 item_list.push(val);
             }
@@ -118,18 +113,37 @@ function renderHours(container, template, collection, type){
         collection = [];
         collection = item_list;
     }
-    
     if (type == "holiday_hours") {
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday == true) {
-                holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
-                val.formatted_date = holiday.format("MMM DD");
-                if (val.open_time && val.close_time && val.is_closed == false){
-                    var open_time = moment(val.open_time).tz(getPropertyTimeZone());
-                    var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                    val.h = open_time.format("h:mma") + " - " + close_time.format("h:mma");   
-                } else {
-                    val.h = "Closed";
+                var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
+                var today = moment().tz(getPropertyTimeZone());
+                if (holiday.format("YYYYMMDD") == today.format("YYYYMMDD")){
+                    val.active_class = "drop-down-row-today";
+                }
+                else{
+                    val.active_class = "";
+                }
+                if(Cookies.get('current_locale') == "en-CA"){
+                    val.formatted_date = holiday.format("MMM DD");
+                    if (val.open_time && val.close_time && val.is_closed == false){
+                        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                        val.h = open_time.format("h:mma") + " - " + close_time.format("h:mma");   
+                    } else {
+                        val.h = "Closed";
+                    }    
+                }
+                if(Cookies.get('current_locale') == "fr-CA"){
+                    var french_holiday = moment(val.holiday_date).locale('fr-ca');
+                    val.formatted_date = french_holiday.format("DD MMM");
+                    if (val.open_time && val.close_time && val.is_closed == false){
+                        var open_time = moment(val.open_time).tz(getPropertyTimeZone());
+                        var close_time = moment(val.close_time).tz(getPropertyTimeZone());
+                        val.h = open_time.format("H") + "h" + open_time.format("mm") + " à " + close_time.format("H") + "h" + close_time.format("mm");
+                    } else {
+                        val.h = "Fermé";
+                    }
                 }
                 item_list.push(val);
             }
@@ -141,7 +155,6 @@ function renderHours(container, template, collection, type){
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
-    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
