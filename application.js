@@ -581,7 +581,7 @@ function show_png_pin(trigger, map){
 					<div class="text">\
 					<strong>'+ selectedOptionName + '</strong>\
 				</div>\
-				<img src="//www.mallmaverick.com/system/sites/map_markers/000/000/027/original/map_marker.png?1417461836" width="45px" height="59px" alt="marker" />\
+				<img src="//codecloud.cdn.speedyrails.net/sites/58b449586e6f646b91000000/image/png/1497039299000/map_marker.png" width="45px" height="59px" alt="marker" />\
 				</div>\
 			</div>'
 			]
