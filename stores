@@ -102,29 +102,32 @@
 </div>
 <div class="line_break"></div>
 <script>
-    $(document).ready(function(){
-        function renderAll (){
-            init();
-            var stores = getStoresList();
-            var categories = getStoreCategories();
-            
-            renderStoreList('#store_list_container','#store_list_template', stores, "stores");
-            renderStoreList('#store_list_container_right','#store_list_template_right', stores, "stores");
-            renderStoreListCatetories('#category_list_container','#category_list_template', categories, stores);
-            renderGeneral('#categories_container', '#categories_template', categories, stores);
-        }
-        loadMallDataCached(renderAll); 
+$(document).ready(function(){
+    function renderAll (){
+        init();
+        var stores = getStoresList();
+        var categories = getStoreCategories();
+        
+        renderStoreList('#store_list_container','#store_list_template', stores, "stores");
+        renderStoreListCatetories('#category_list_container','#category_list_template', categories, stores);
+        renderGeneral('#categories_container', '#categories_template', categories, stores);
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
         
         $(".store_tab").hide();
-        
+    
         $(".category_tab a").click(function(){
             $(".category_tab").hide();
             $(".store_tab").show();
-        })
+        });
         
         $(".store_tab a").click(function(){
             $(".store_tab").hide();
             $(".category_tab").show();            
-        })
-    })
+        });
+    }
+    loadMallDataCached(renderAll); 
+})
 </script>
