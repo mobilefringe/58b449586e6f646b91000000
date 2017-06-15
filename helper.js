@@ -64,6 +64,61 @@ function init() {
     });
 }
 
+function getDay(day_of_week){
+    var day;
+    if(Cookies.get('current_locale') == "en-CA"){
+        switch (day_of_week){
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+                break;
+        }
+    }
+    if(Cookies.get('current_locale') == "fr-CA"){
+        switch (day_of_week){
+            case 0:
+                day = "Dimanche";
+                break;
+            case 1:
+                day = "Lundi";
+                break;
+            case 2:
+                day = "Mardi";
+                break;
+            case 3:
+                day = "Mercredi";
+                break;
+            case 4:
+                day = "Jeudi";
+                break;
+            case 5:
+                day = "Vendredi";
+                break;
+            case 6:
+                day = "Samedi";
+                break;
+        }
+    } 
+    return day;
+}
+
 function setCurrentLocale(locale){
     Cookies.set('current_locale', locale);
 }
