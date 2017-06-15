@@ -38,8 +38,6 @@ function init() {
         window.location.href = "?locale=" + $(this).val();    
     }); 
     
-    
-    
     $(".long_feature_box").hover(function() {
         $(this).find(".long_feature_label").animate({
             "top": "-=81%"
@@ -77,8 +75,6 @@ function setCurrentLocale(locale){
     Cookies.set('current_locale', locale);
 }
 
-
-    
 function setPrimaryLanguage(){
     i18n.setLng(Cookies.get('primary_locale'), function(t) {
         $(document).i18n();
