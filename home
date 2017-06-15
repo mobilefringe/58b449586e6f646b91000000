@@ -13,7 +13,7 @@
 </div>
 
 <script>
-$(document).ready(function(){
+$(document).ready(function(e){
     init(e);
     function renderAll(){
         var banners = getBanners();
