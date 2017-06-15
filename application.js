@@ -200,7 +200,13 @@ function renderHomeHours(container, template, collection){
     $.each(item_list, function(key, val) {
         if(Cookies.get('current_locale') == "en-CA"){
             val.weekday = moment().format("dddd");
-        }     
+        }  
+        if(Cookies.get('current_locale') == "fr-CA"){
+            val.weekday = moment().format("dddd");
+            
+            var french_day = moment().locale('fr-ca');
+            val.weekday = french_day.format("dddd");
+        }  
         if(Cookies.get('current_locale') == "en-CA"){
             if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
                 var open_time = moment(val.open_time).tz(getPropertyTimeZone());
