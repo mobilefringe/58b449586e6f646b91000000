@@ -19,7 +19,7 @@ function init() {
         setPrimaryLanguage();
     }
     
-    function setCurrentLocale(locale){
+    function setCurrentLocale(current_locale){
         Cookies.set('current_locale', locale);
     }
 
