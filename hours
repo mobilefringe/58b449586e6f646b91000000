@@ -14,9 +14,17 @@
     <hr>
     <div class="hour_table" id="holiday_hours_container">
         <script id="holiday_hours_template" type="x-tmpl-mustache/text">
-            <div class="hour_row">    
-                <span class="hour_time pull-right">{{h}}</span>
-                <span class="hour_date">{{holiday_name}}, <span class="lowercase">{{formatted_date}}</span></span>  
+            <div class="primary-locale">
+                <div class="hour_row">    
+                    <span class="hour_time pull-right">{{h}}</span>
+                    <span class="hour_date">{{holiday_name}}, <span class="lowercase">{{formatted_date}}</span></span>  
+                </div>
+            </div>
+            <div class="secondary-locale">
+                <div class="hour_row">    
+                    <span class="hour_time pull-right">{{h}}</span>
+                    <span class="hour_date">{{holiday_name_2}}, <span class="lowercase">{{formatted_date}}</span></span>  
+                </div>
             </div>
         </script>
     </div>
@@ -37,3 +45,22 @@ $(document).ready(function(e){
     loadMallDataCached(renderAll); 
 });
 </script>
+
+<!--<div class="primary-locale">-->
+<!--    <div class="col-xs-6">-->
+<!--        <div style="font-weight:bold">{{ holiday_name }}</div>-->
+<!--	    <div>{{ formatted_date }}</div>-->
+<!--    </div>-->
+<!--	<div class="col-xs-6">-->
+<!--		<div align="right">{{ h }}</div>-->
+<!--	</div>-->
+<!--</div>-->
+<!--<div class="secondary-locale">-->
+<!--    <div class="col-xs-6">-->
+<!--        <div style="font-weight:bold">{{ holiday_name_2 }}</div>-->
+<!--	    <div>{{ formatted_date }}</div>-->
+<!--    </div>-->
+<!--	<div class="col-xs-6">-->
+<!--		<div align="right">{{ h }}</div>-->
+<!--	</div>-->
+<!--</div>-->
