@@ -202,8 +202,6 @@ function renderHomeHours(container, template, collection){
             val.weekday = moment().format("dddd");
         }  
         if(Cookies.get('current_locale') == "fr-CA"){
-            val.weekday = moment().format("dddd");
-            
             var french_day = moment().locale('fr-ca');
             val.weekday = french_day.format("dddd");
         }  
