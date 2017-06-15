@@ -198,14 +198,14 @@ function renderHomeHours(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(today_hours);    
     $.each(item_list, function(key, val) {
-        // var day = getDay(val.day_of_week);
-        val.weekday = moment().format("dddd");
+        if(Cookies.get('current_locale') == "en-CA"){
+            val.weekday = moment().format("dddd");
                 
         if(Cookies.get('current_locale') == "en-CA"){
             if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
                 var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                 var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                val.close_time = "Open Today Until " + close_time.format("h:mma");
+                val.close_time = close_time.format("h:mma");
             } else {
                 val.close_time = "Closed Today";
             }    
@@ -214,7 +214,7 @@ function renderHomeHours(container, template, collection){
             if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
                 var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                 var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-                val.close_time = "Ouvert aujourd'hui jusqu'à " + close_time.format("H") + "h" + close_time.format("mm");
+                val.close_time = close_time.format("H") + "h" + close_time.format("mm");
             } else {
                 val.close_time = "Fermé aujourd'hui";
             }        
