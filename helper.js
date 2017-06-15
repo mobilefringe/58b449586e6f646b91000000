@@ -22,16 +22,6 @@ function init() {
     function setCurrentLocale(locale){
         Cookies.set('current_locale', locale);
     }
-
-    $("#brand_select").on('change', function() {            
-        if ($(this).val() != ""){
-            window.location = "/stores/" + $(this).val();    
-        }
-    });  
-
-    $("#locale_select").on('change', function() {                        
-        window.location.href = "?locale=" + $(this).val();    
-    }); 
     
     if(Cookies.get('current_locale') == "en-CA"){
         $("#brand_select").prepend("<option selected>Brands</option>");   
@@ -41,6 +31,18 @@ function init() {
         $("#brand_select").prepend("<option selected>Boutiques</option>"); 
         $("#locale_select").val("fr");
     }
+    
+    $("#brand_select").on('change', function() {            
+        if ($(this).val() != ""){
+            window.location = "/stores/" + $(this).val();    
+        }
+    });  
+    
+    $("#locale_select").on('change', function() {                        
+        window.location.href = "?locale=" + $(this).val();    
+    }); 
+    
+    
     
     $(".long_feature_box").hover(function() {
         $(this).find(".long_feature_label").animate({
