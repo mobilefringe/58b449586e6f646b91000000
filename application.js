@@ -123,12 +123,12 @@ function renderHours(container, template, collection, type){
             if (!val.store_id && val.is_holiday == true) {
                 var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
                 var today = moment().tz(getPropertyTimeZone());
-                if (holiday.format("YYYYMMDD") == today.format("YYYYMMDD")){
-                    val.active_class = "drop-down-row-today";
-                }
-                else{
-                    val.active_class = "";
-                }
+                // if (holiday.format("YYYYMMDD") == today.format("YYYYMMDD")){
+                //     val.active_class = "drop-down-row-today";
+                // }
+                // else{
+                //     val.active_class = "";
+                // }
                 if(Cookies.get('current_locale') == "en-CA"){
                     val.formatted_date = holiday.format("MMM DD");
                     if (val.open_time && val.close_time && val.is_closed == false){
@@ -162,32 +162,6 @@ function renderHours(container, template, collection, type){
     });
     $(container).html(item_rendered.join(''));
 }
-
-// function renderHomeHours(container, template, collection){
-//     var today_hours = getTodaysHours();
-//     var item_list = [];
-//     var item_rendered = [];
-//     var template_html = $('#home_hours_template').html();
-//     Mustache.parse(template_html);   // optional, speeds up future uses
-//     item_list.push(today_hours);    
-//     $.each(item_list, function(key, val) {
-//         val.day = moment().date();
-//         var d = moment();
-//         val.month = moment().month();
-//         val.weekday = moment().format("dddd");
-//         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
-//             var open_time = moment(val.open_time).tz(getPropertyTimeZone());
-//             var close_time = moment(val.close_time).tz(getPropertyTimeZone());
-//             val.h = open_time.format("h:mma") + " - " + close_time.format("h:mma");
-//             val.close_time = close_time.format("h:mma");
-//         } else {
-//             val.h = "Closed";
-//         }
-//         var rendered = Mustache.render(template_html,val);
-//         item_rendered.push(rendered);
-//     });
-//     $('#home_hours_container').html(item_rendered.join(''));
-// }
 
 function renderHomeHours(container, template, collection){
     var current_local = getStorage().primary_locale;
