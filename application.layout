@@ -212,7 +212,7 @@
     
     <div class="trim_screen">
         <div class=" main_content row-fluid">
-            <div class="col-md-9">
+            <div class="col-md-9 yield">
                 {{yield}}
             </div>
     
