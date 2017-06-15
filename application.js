@@ -198,8 +198,8 @@ function renderHomeHours(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     item_list.push(today_hours);    
     $.each(item_list, function(key, val) {
-        var day = getDay(val.day_of_week);
-        val.weekday = moment(day).format("dddd");
+        // var day = getDay(val.day_of_week);
+        val.weekday = moment().format("dddd");
                 
         if(Cookies.get('current_locale') == "en-CA"){
             if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
