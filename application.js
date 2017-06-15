@@ -80,13 +80,13 @@ if (type == "reg_hours") {
                 var day = getDay(val.day_of_week);
                 val.day = day;
             
-                // var today = moment().tz(getPropertyTimeZone());
-                // if(val.day_of_week == parseInt(today.format('d'))){
-                //     val.active_class = "drop-down-row-today";
-                // }
-                // else{
-                //     val.active_class = "";
-                // }
+                var today = moment().tz(getPropertyTimeZone());
+                if(val.day_of_week == parseInt(today.format('d'))){
+                    val.active_class = "drop-down-row-today";
+                }
+                else{
+                    val.active_class = "";
+                }
                 if(Cookies.get('current_locale') == "en-CA"){
                     if (val.open_time && val.close_time && val.is_closed == false){
                         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
