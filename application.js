@@ -61,9 +61,6 @@ function renderFeatureItems(feature_item, feature_item_template, feature_items){
     var template_html = $(feature_item_template).html();
     Mustache.parse(template_html); 
     $.each(feature_items, function(key, val) {
-        // if (val.description.length  >= 100) {
-        //     val.description = val.description.substring(0,99) + "...";
-        // }
         if(val.url == "" || val.url === null){
            val.css = "style=cursor:default;";
            val.noLink = "return false";
@@ -121,17 +118,8 @@ function renderHours(container, template, collection, type){
     if (type == "holiday_hours") {
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday == true) {
-                // var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
-                // var today = moment().tz(getPropertyTimeZone());
-                // if (holiday.format("YYYYMMDD") == today.format("YYYYMMDD")){
-                //     val.active_class = "drop-down-row-today";
-                // }
-                // else{
-                //     val.active_class = "";
-                // }
                 if(Cookies.get('current_locale') == "en-CA"){
                     var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
-                    console.log(holiday)
                     val.formatted_date = holiday.format("MMM DD");
                     if (val.open_time && val.close_time && val.is_closed == false){
                         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
@@ -144,7 +132,6 @@ function renderHours(container, template, collection, type){
                 if(Cookies.get('current_locale') == "fr-CA"){
                     var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
                     var french_holiday = moment(holiday).locale('fr-ca');
-                    console.log(french_holiday);
                     val.formatted_date = french_holiday.format("DD MMM");
                     if (val.open_time && val.close_time && val.is_closed == false){
                         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
