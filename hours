@@ -35,6 +35,7 @@ $(document).ready(function(e){
     init(e);
     function renderAll(){
         var hours = getPropertyHours();
+        console.log(hours)
         renderHours('#reg_hours_container','#reg_hours_template', hours, 'reg_hours');
         renderHours('#holiday_hours_container','#holiday_hours_template', hours, 'holiday_hours');
         
