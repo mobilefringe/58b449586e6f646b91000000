@@ -119,7 +119,7 @@ function renderHours(container, template, collection, type){
         $.each( collection , function( key, val ) {
             if (!val.store_id && val.is_holiday == true) {
                 if(Cookies.get('current_locale') == "en-CA"){
-                    var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
+                    holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
                     val.formatted_date = holiday.format("MMM DD");
                     if (val.open_time && val.close_time && val.is_closed == false){
                         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
