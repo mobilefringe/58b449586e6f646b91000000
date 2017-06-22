@@ -131,8 +131,8 @@ function renderHours(container, template, collection, type){
                 }
                 if(Cookies.get('current_locale') == "fr-CA"){
                     // var holiday = moment(val.holiday_date).tz(getPropertyTimeZone());
-                    // var french_holiday = moment(holiday).locale('fr');
-                    val.formatted_date = moment(val.holiday_date).locale('fr-ca').format("DD MMM");
+                    var french_holiday = moment(holiday).locale('fr');
+                    val.formatted_date = moment(french_holiday).locale('fr-ca').format("DD MMM");
                     if (val.open_time && val.close_time && val.is_closed == false){
                         var open_time = moment(val.open_time).tz(getPropertyTimeZone());
                         var close_time = moment(val.close_time).tz(getPropertyTimeZone());
