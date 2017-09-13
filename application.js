@@ -348,8 +348,7 @@ function renderPromotions(container, template, collection){
             val.store_detail_btn = store_details.slug ;
             val.store_name = store_details.name;
             val.image_url = store_details.store_front_url_abs;
-        }
-        else{
+        } else {
             val.store_name = mall_name;
             // val.image_url = "";
         }
@@ -388,14 +387,12 @@ function renderPromoDetails(container, template, collection){
             val.store_name = store_details.name;
             if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
                 val.image_url = "";
-            }
-            else{
+            } else {
                 val.image_url = store_details.store_front_url_abs;
             }
-        }
-        else{
+        } else {
             val.store_name = mall_name;
-            val.image_url = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         }
         
         if(val.promo_image_url_abs.indexOf('missing.png') > -1){
@@ -407,8 +404,7 @@ function renderPromoDetails(container, template, collection){
         var end = moment(val.end_date).tz(getPropertyTimeZone());
         if (start.format("DMY") == end.format("DMY")){
             val.dates = start.format("MMM D")
-        }
-        else{
+        } else {
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         var rendered = Mustache.render(template_html,val);
@@ -425,7 +421,7 @@ function renderStoreDetails(container, template, collection, slug){
     item_list.push(collection);
     $.each( item_list , function( key, val ) {
         if ((val.store_front_url).indexOf('missing.png') > -1){
-            val.alt_store_front_url = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
+            val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         } else {
             val.alt_store_front_url = getImageURL(val.store_front_url); 
         }
@@ -435,14 +431,13 @@ function renderStoreDetails(container, template, collection, slug){
         val.property_map = getPropertyDetails().mm_host + getPropertyDetails().map_url;
         if (val.website != null && val.website.length > 0){
             val.show = "display:inline-block";
-        }
-        else{
+        } else {
             val.show = "display:none";
         }
+        
         if (val.phone != null && val.phone.length > 0){
             val.phone_show = "display:inline-block";
-        }
-        else{
+        } else {
             val.phone_show = "display:none";
         }
         var rendered = Mustache.render(template_html,val);
@@ -545,7 +540,7 @@ function renderPosts(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         } else {
             val.image_url = val.image_url;
         }
@@ -565,7 +560,7 @@ function renderPostDetails(container, template, collection){
     var template_html = $(template).html();
     $.each( collection , function( key, val ) {
         if (val.image_url.indexOf('missing.png') > -1) {
-            val.image_url = "//codecloud.cdn.speedyarils.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/58b449586e6f646b91000000/image/jpeg/1488210736000/sugarlogo.jpg";
         } else {
             val.image_url = val.image_url;
         }
