@@ -1361,7 +1361,7 @@ hr{
     height: 55px;
     float: left;
     background-color:#f57b2b;
-    color: white !important;
+    color: #000 !important;
     display:inline-block; 
     font-size:1.5em;
     line-height:2.25em;
