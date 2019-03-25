@@ -463,6 +463,13 @@ legend{
     max-width: 300px;
 }
 
+.heading {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
 .social_icon {
     margin-right: 5px;
     // padding: 25%;
@@ -1933,13 +1940,6 @@ td.stores_pin{
     }
     .bottom_nav .nav_site_map .site_map_submenu{
         padding-left: 5px;
-    }
-    
-    .heading {
-        display: inline-block;
-        max-width: 100%;
-        margin-bottom: 5px;
-        font-weight: 700;
     }
     
     .footer {
