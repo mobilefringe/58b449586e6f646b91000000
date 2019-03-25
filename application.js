@@ -69,6 +69,7 @@ function renderFeatureItems(feature_item, feature_item_template, feature_items){
         item_rendered.push(repo_rendered);
     });
     $(feature_item).html(item_rendered.join(''));
+    console.log(item_rendered)
 }
 
 function renderHours(container, template, collection, type){
