@@ -182,7 +182,7 @@
                 <div class="col-md-3">
                     <div class="hour_box">  
                         <div class="hour_info">
-                            <span class="feature_label" data-i18n="general.hours"></span>
+                            <span class="feature_label heading" data-i18n="general.hours"></span>
                             <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                             <div id="home_hours_container" class="home_hours_info">
                                 <script id="home_hours_template" type="x-tmpl-mustache/text">
