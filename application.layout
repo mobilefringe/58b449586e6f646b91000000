@@ -182,7 +182,7 @@
                 <div class="col-md-3">
                     <div class="hour_box">  
                         <div class="hour_info">
-                            <label for="hours_today" class="feature_label" data-i18n="general.hours"></label>
+                            <span class="feature_label" data-i18n="general.hours"></span>
                             <a class="accessible" href="#main" style="display:none" >[Skip to Content]</a>
                             <div id="home_hours_container" class="home_hours_info">
                                 <script id="home_hours_template" type="x-tmpl-mustache/text">
@@ -280,10 +280,10 @@
                 <div class="col-sm-6">
                     <div class="hidden-xs special_box">
                         <div>
-                            <label for="facebook_image_id">                     
+                            <span>                     
                                 <i class="fa fa-facebook-official social_icon" aria-hidden="true"></i>
                                 FACEBOOK
-                            </label>
+                            </span>
                         </div>
                         <div class="fb-page" data-href="https://www.facebook.com/sugarloafmall" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/sugarloafmall" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/sugarloafmall">Sugarloaf Mall</a></blockquote></div>
                     </div>
@@ -295,7 +295,7 @@
                 </div>
         		<div class="col-sm-6">   
                     <div class="nav_site_map pull-right hidden-xs">
-                        <label for="nav_site_map_link_id" >NAVIGATION</label>
+                        <span>NAVIGATION</span>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title" data-i18n="nav.stores"></span>
