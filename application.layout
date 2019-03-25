@@ -295,7 +295,7 @@
                 </div>
         		<div class="col-sm-6">   
                     <div class="nav_site_map pull-right hidden-xs">
-                        <span>NAVIGATION</span>
+                        <span class="heading">NAVIGATION</span>
                         <div class="site_map_cols">
                             <div class="nav_sitemap_item">
                                 <span class="site_map_title" data-i18n="nav.stores"></span>
