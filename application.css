@@ -468,7 +468,10 @@ legend{
     max-width: 100%;
     margin-bottom: 5px;
     font-weight: 700;
-    color: #000;
+    color: black;
+    font-size:1.5em;
+    line-height:1.5em;
+    font-family: futura_condensed;
 }
 
 .social_icon {
