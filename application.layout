@@ -260,7 +260,7 @@
                             <a href="{{url}}">
                                 <img class="feature_image" alt="{{name_2}}" src="{{image_url}}">
                                 <div class="long_feature_label">
-                                    {{name}}
+                                    {{name_2}}
                                 </div>
                             </a>
                         </div>
