@@ -1935,7 +1935,7 @@ td.stores_pin{
         padding-left: 5px;
     }
     
-    .heading {
+    .heading, .feature_label .heading {
         display: inline-block;
         max-width: 100%;
         margin-bottom: 5px;
