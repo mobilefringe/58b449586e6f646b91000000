@@ -1,0 +1,49 @@
+<div class="promo_page">
+    <div class="row-fluid">
+        <h1 class="page_title promo_header">EVENT LISTING</h1>
+        <span class="promo_back"> <a href="/events">back</a> </span>    
+    </div>
+    <hr/>
+    <div class="row-fluid social-links" style="margin-top:10px; margin-bottom:10px;">
+        <div class="addthis_sharing_toolbox"></div>
+    </div>  
+    
+    <div id="event_details_container">
+        <script id="event_details_template" type="x-tmpl-mustache/text">
+    	    <div class="media-body">
+    	        <div class="details_sharer">
+                    <span>Share</span>
+                    <a href="//www.facebook.com/sharer.php?u=https://www.fdlcentrecommercial.com/events/{{slug}}" target="_blank">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="share facebook">
+                    </a>
+                    <a target="_blank" href="//twitter.com/share?url=https://www.fdlcentrecommercial.com/events/{{slug}}&text={{name}}">
+                        <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="share twitter">
+                    </a>
+                </div>
+		        <h2>{{name}}</h2>
+                <span class="promo_date">{{dates}}</span>
+				<p>{{{rich_description}}}</p>
+		    </div>
+            <img alt="Promo Image" src="{{event_image_url_abs}}" />   		
+        </script>
+    </div>
+</div>
+<div class="mobile_line_break"></div>
+<!--Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-542d67e01c08fca8" async></script>
+<script>
+$(document).ready(function(e){
+    init(e);
+    function renderAll(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        event_details = getEventDetailsBySlug(slug);
+        renderEventDetails('#event_details_container', '#event_details_template', event_details);
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    loadMallDataCached(renderAll); 
+})
+</script>
