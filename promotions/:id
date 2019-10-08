@@ -12,10 +12,10 @@
     	    <div class="promo_info">
     	        <div class="details_sharer">
                     <span>Share</span>
-                    <a href="//www.facebook.com/sharer.php?u=https://www.fdlcentrecommercial.com/events/{{slug}}" target="_blank">
+                    <a href="//www.facebook.com/sharer.php?u=https://shopsugarloafmall.com/events/{{slug}}" target="_blank">
                         <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627976000/Facebook Copy 2.png" class="" alt="share facebook">
                     </a>
-                    <a target="_blank" href="//twitter.com/share?url=https://www.fdlcentrecommercial.com/events/{{slug}}&text={{name}}">
+                    <a target="_blank" href="//twitter.com/share?url=https://shopsugarloafmall.com/events/{{slug}}&text={{name}}">
                         <img src="//codecloud.cdn.speedyrails.net/sites/562a661e6e6f64426b000000/image/png/1445627988000/Twitter Copy 2.png" class="" alt="share twitter">
                     </a>
                 </div>
