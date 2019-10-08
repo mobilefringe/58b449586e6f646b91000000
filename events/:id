@@ -30,7 +30,7 @@
 </div>
 <div class="mobile_line_break"></div>
 <!--Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-542d67e01c08fca8" async></script>
+<!--<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-542d67e01c08fca8" async></script>-->
 <script>
 $(document).ready(function(e){
     init(e);
