@@ -868,6 +868,37 @@ a.btn-nav {
     height: 30px;
 }
 
+
+//event and promo details
+
+.details_sharer{
+    display: inline-block;
+    background: #ededed;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom:30px;
+    a:hover {
+        text-decoration: none;
+    }
+}
+.show_phone_ib{
+    display:none;
+}
+
+.details_sharer span{
+    font-weight:bold;
+    text-transform:uppercase;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.details_sharer img{
+    width: 28px !important;
+    margin: 0 5px !important;
+}
+
+
 /*
   Button Prime
 */
