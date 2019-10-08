@@ -1,0 +1,60 @@
+<style>
+    #error_msg {
+        text-align: center;
+    }
+</style>
+<div class="page_body">
+    
+    <hr>
+    <div id="contact_us" class="hidden_now">
+        <iframe class="hidden-xs" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2670.090208113098!2d-66.70008393337854!3d47.99264379164969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c9820e435a64c43%3A0x1af9a94416099133!2sSugarloaf+Mall!5e0!3m2!1sen!2sus!4v1497556558444" width="100%" height="405" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+        <iframe class="visible-xs-inline-block" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2670.090208113098!2d-66.70008393337854!3d47.99264379164969!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4c9820e435a64c43%3A0x1af9a94416099133!2sSugarloaf+Mall!5e0!3m2!1sen!2sus!4v1497556558444" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+        <!--<div id="map_container">-->
+        <!--    <script id="map_template" type="x-tmpl-mustache/text">-->
+        <!--        <iframe class="hidden-xs" src="https://maps.google.nl/maps?q={{name}} {{address1}}, {{city}}, {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}}, {{city}}, {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="405" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+        <!--        <iframe class="visible-xs-inline-block" src="https://maps.google.nl/maps?q={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;hl=en&amp;ie=UTF8&amp;t=v&amp;hnear={{name}} {{address1}} {{city}} {{Country}} {{province_state}} {{postal_code}}&amp;z=13&amp;output=embed" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        <!--        <div class="line_break"></div>-->
+        <!--    </script>-->
+        <!--</div>-->
+    </div>
+    <div id="page_body"></div>
+</div>
+<div class="mobile_line_break"></div>
+<script>
+$(document).ready(function(e){
+    init(e);
+    function renderAll(){
+        var prop_details = getPropertyDetails();
+        renderPropertyDetails('#map_container', '#map_template', prop_details);
+            
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        var prefix = get_prefix();
+        var pages_json = prefix + "/pages/" + slug + ".json"
+        $.getJSON(pages_json).done(function(data) {
+            if(Cookies.get('current_locale') == "en-CA"){
+                $('#page_title').html(data.title_2);
+                $('#page_body').html(data.body_2);
+            }
+            if(Cookies.get('current_locale') == "fr-CA"){
+                $('#page_title').html(data.title);
+                $('#page_body').html(data.body);
+            }
+            if(slug === "sugarloaf-contact-us") {
+                $("#contact_us").show();
+            }
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#error_msg").fadeIn("fast");
+            }
+        }); 
+        
+        setTimeout(function() {
+            show_content();
+        }, 500);
+    }
+    loadMallDataCached(renderAll); 
+})
+</script>
